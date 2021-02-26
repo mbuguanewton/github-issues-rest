@@ -1,0 +1,56 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.repodetail {
+  width: 100%;
+  background: $light;
+  border-radius: $radius-md;
+  padding: 20px;
+
+  &__wrapper {
+    height: 100%;
+    width: 100%;
+
+    &--header {
+      width: 100%;
+      @include flex(row, space-between, center);
+      margin-bottom: 1rem;
+
+      .btn {
+        width: 20%;
+        border-radius: $radius-md;
+        height: 2.5rem;
+
+        &__repo {
+          background: $primary-color;
+          color: $white;
+
+          .icon {
+            font-size: 1.2rem;
+          }
+
+          span {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+
+    &--description {
+      margin-top: 1rem;
+      width: 90%;
+
+      h2 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        color: $dark-grey;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

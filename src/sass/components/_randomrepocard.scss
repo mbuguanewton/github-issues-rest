@@ -1,0 +1,44 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.randomcard {
+  padding: 20px;
+  height: 100%;
+  background: $light;
+  border-radius: $radius-md;
+  transition: 0.3s ease;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
+
+  &__wrapper {
+    @include flex(column, space-between, flex-start);
+    height: 100%;
+    width: 100%;
+
+    h3 {
+      font-size: 1rem;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &--container {
+      @include flex(row, space-between, center);
+      width: 100%;
+
+      .icon {
+        font-size: 1.5rem;
+        transition: 0.3s ease-in-out;
+        color: $dark-grey;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

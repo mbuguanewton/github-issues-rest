@@ -1,0 +1,21 @@
+// display content using flex-box
+@mixin flex($dir: row, $justify: flex-start, $align: flex-start) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// css styles
+@mixin grid($num: 1, $gap: 0) {
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat($num, 1fr);
+}
+
+// center
+@mixin translateCenter {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

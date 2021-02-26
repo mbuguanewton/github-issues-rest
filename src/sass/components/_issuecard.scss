@@ -1,0 +1,40 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.issuecard {
+  width: 100%;
+  background: $light;
+  border-radius: $radius-md;
+  padding: 20px;
+  @include flex(column, space-between, flex-start);
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  &__container {
+    width: 100%;
+    @include flex(row, space-between, center);
+
+    .badge {
+      padding: 5px;
+      border-radius: $radius-md;
+      text-transform: capitalize;
+      font-weight: 500;
+
+      &__open {
+        background: $green;
+        color: $white;
+      }
+      &__close {
+        background: $red;
+        color: $white;
+      }
+    }
+  }
+}

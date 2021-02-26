@@ -1,0 +1,56 @@
+@import './mixins';
+@import './variables';
+
+// common styles
+.btn {
+  height: 2.5rem;
+  background: $light-grey;
+  width: auto;
+  min-width: 10%;
+  border-radius: $radius-md;
+  font-family: $primary-font;
+  @include flex(row, center, center);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// form
+.formgroup {
+  @include flex(column, flex-start, flex-start);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+
+  label {
+    font-size: 0.9rem;
+    font-family: $primary-font;
+    color: $dark-grey;
+  }
+
+  &__control {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    font-family: $primary-font;
+    color: $dark-grey;
+    background: $light;
+    padding: 0 20px;
+    border-radius: $radius-md;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: $red;
+}

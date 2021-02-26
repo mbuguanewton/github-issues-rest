@@ -1,0 +1,17 @@
+@import '../../keyframes';
+@import '../../mixins';
+@import '../../variables';
+
+.quill {
+  width: 100%;
+}
+
+.ql-toolbar {
+  border-radius: $radius-md $radius-md 0 0;
+}
+
+.ql-container {
+  border-radius: 0 0 $radius-md $radius-md;
+  height: 250px !important;
+  width: 100%;
+}

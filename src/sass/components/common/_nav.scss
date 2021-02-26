@@ -1,0 +1,21 @@
+@import '../../keyframes';
+@import '../../mixins';
+@import '../../variables';
+
+.nav {
+  height: 3rem;
+  background: $light;
+
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0;
+    @include flex(row, flex-start, center);
+    height: 100%;
+
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  }
+}

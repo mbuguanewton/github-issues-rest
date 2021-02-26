@@ -1,0 +1,29 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.languages {
+  width: 100%;
+  height: auto;
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: $dark-grey;
+  }
+
+  &__wrapper {
+    @include grid(15, 5px);
+
+    &--badge {
+      padding: 10px;
+      color: $primary-color !important;
+      background: lighten($primary-color, 35%) !important;
+      border-radius: $radius-lg !important;
+      text-transform: capitalize !important;
+      font-weight: 400 !important;
+      box-shadow: none !important;
+    }
+  }
+}

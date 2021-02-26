@@ -1,0 +1,15 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.home {
+  width: 100%;
+  height: auto;
+
+  &__wrapper {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}

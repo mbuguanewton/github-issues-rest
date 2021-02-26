@@ -1,0 +1,21 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.repo {
+  width: 100%;
+  height: auto;
+
+  &__wrapper {
+    width: 60%;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      color: $dark-grey;
+      text-transform: capitalize;
+    }
+  }
+}

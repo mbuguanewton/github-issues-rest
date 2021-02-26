@@ -1,0 +1,35 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.search {
+  height: 3rem;
+  width: 100%;
+  position: relative;
+
+  form {
+    height: 100%;
+    width: 100%;
+    @include flex(row, flex-start, center);
+
+    .formgroup {
+      width: 40%;
+      position: relative;
+
+      .icon {
+        position: absolute;
+        left: 10px;
+      }
+    }
+
+    .btn {
+      margin-left: 1rem;
+      height: 3rem;
+      &__submit {
+        background: $primary-color;
+        color: $white;
+      }
+    }
+  }
+}

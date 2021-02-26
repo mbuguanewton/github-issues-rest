@@ -1,0 +1,38 @@
+@import '../keyframes';
+@import '../mixins';
+@import '../variables';
+@import '../typography';
+
+.issues {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+
+  &__header {
+    .btn {
+      height: 2.5rem;
+      width: 20%;
+      border-radius: $radius-md;
+      color: $white;
+      background: $primary-color;
+    }
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    color: $dark-grey;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    @include grid(2, 0.5rem);
+
+    h3 {
+      font-size: 18px;
+      color: $dark-grey;
+      width: 100%;
+    }
+  }
+}

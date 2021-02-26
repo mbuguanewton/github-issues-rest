@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 16px;
+}
+
+@import './keyframes';
+@import './mixins';
+@import './variables';
+@import './typography';
+@import './common';
+
+//common
+@import './components/common/nav';
+@import './components/common/avatar';
+@import './components/common/editor';
+
+// components
+@import './components/randomrepos';
+@import './components/randomrepocard';
+@import './components/search';
+@import './components/user';
+@import './components/userrepos';
+@import './components/languages';
+@import './components/repodetail';
+@import './components/issuelist';
+@import './components/issuecard';
+
+//forms
+@import './forms/issueform';
+
+// pages
+@import './pages/notfound';
+@import './pages/home';
+@import './pages/repo';
