@@ -19,3 +19,27 @@
     }
   }
 }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .repo {
+    &__wrapper {
+      width: 90%;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .repo {
+    &__wrapper {
+      width: 80%;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
 .repodetail {
   width: 100%;
   background: $light;
-  border-radius: $radius-md;
+  border-radius: $radius-lg;
   padding: 20px;
 
   &__wrapper {
@@ -18,10 +18,22 @@
       @include flex(row, space-between, center);
       margin-bottom: 1rem;
 
+      .avatar {
+        &__stack {
+          &--avatar {
+            height: 50px;
+            width: 50px;
+          }
+
+          h4 {
+            color: $dark-grey;
+            font-size: 1.3rem;
+          }
+        }
+      }
+
       .btn {
         width: 20%;
-        border-radius: $radius-md;
-        height: 2.5rem;
 
         &__repo {
           background: $primary-color;
@@ -40,16 +52,102 @@
 
     &--description {
       margin-top: 1rem;
-      width: 90%;
+      width: 60%;
 
       h2 {
-        font-size: 1.2rem;
-        margin: 1rem 0;
+        font-size: 1rem;
+        margin: 0.5rem 0;
         color: $dark-grey;
       }
 
       p {
         font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .repodetail {
+    border-radius: $radius-md;
+
+    &__wrapper {
+      &--header {
+        width: 100%;
+        @include flex(column, space-between, center);
+        margin-bottom: 1rem;
+
+        .avatar {
+          margin: 1rem 0;
+
+          &__stack {
+            &--avatar {
+              height: 40px;
+              width: 40px;
+            }
+
+            h4 {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      &--description {
+        margin-top: 1rem;
+        width: 100%;
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .repodetail {
+    border-radius: $radius-md;
+
+    &__wrapper {
+      &--header {
+        width: 100%;
+        @include flex(column, space-between, center);
+        margin-bottom: 1rem;
+
+        .avatar {
+          margin: 1rem 0;
+
+          &__stack {
+            &--avatar {
+              height: 40px;
+              width: 40px;
+            }
+
+            h4 {
+              font-size: 1.2rem;
+            }
+          }
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+
+      &--description {
+        margin-top: 1rem;
+        width: 100%;
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
       }
     }
   }

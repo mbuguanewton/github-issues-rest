@@ -9,12 +9,27 @@
 
   .btn {
     width: 20%;
-    height: 2.5rem;
-    border-radius: $radius-md;
+    margin: 0.5rem 0;
 
     &__submitissue {
       background: $primary-color;
       color: $white;
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .issueform {
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .issueform {
+    .btn {
+      width: 30%;
     }
   }
 }

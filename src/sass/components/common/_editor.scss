@@ -7,11 +7,13 @@
 }
 
 .ql-toolbar {
-  border-radius: $radius-md $radius-md 0 0;
+  border-radius: $radius-lg $radius-lg 0 0;
+  border: 2px solid $light !important;
 }
 
 .ql-container {
-  border-radius: 0 0 $radius-md $radius-md;
+  border-radius: 0 0 $radius-lg $radius-lg;
   height: 250px !important;
   width: 100%;
+  border: 2px solid $light !important;
 }

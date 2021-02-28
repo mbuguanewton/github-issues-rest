@@ -8,7 +8,7 @@
   height: auto;
   background: $light;
   margin: 2rem 0;
-  border-radius: $radius-md;
+  border-radius: $radius-lg;
 
   &__wrapper {
     height: 100%;
@@ -36,15 +36,15 @@
       }
 
       h3 {
-        font-weight: 400;
+        font-weight: 600;
         margin: 0.5rem 0;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-transform: capitalize;
       }
 
       .badge {
-        padding: 5px;
-        border-radius: $radius-md;
+        padding: 10px;
+        border-radius: $radius-lg;
         color: $primary-color;
         background: lighten($primary-color, 35%);
       }
@@ -61,12 +61,12 @@
         .btn {
           height: 2.5rem;
           &__blog {
-            width: 25%;
+            width: 35%;
             color: $primary-color;
             background: lighten($primary-color, 35%);
           }
           &__link {
-            width: 70%;
+            width: 60%;
             background: $primary-color;
             color: $white;
 
@@ -90,6 +90,120 @@
       p {
         font-size: 0.9rem;
         font-style: italic;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .user {
+    border-radius: $radius-md;
+
+    &__wrapper {
+      height: 100%;
+      padding: 10px;
+      @include grid(1, 1rem);
+
+      &--avatar {
+        @include flex(row, center, center);
+        width: 100%;
+
+        .user--avatar {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &--details {
+        grid-column: 1;
+        @include flex(column, center, center);
+
+        .badge {
+          border-radius: $radius-md;
+        }
+
+        .actions {
+          width: 100%;
+          margin: 1rem 0;
+          @include flex(row, space-between, center);
+
+          .icon {
+            font-size: 1.2rem;
+          }
+
+          .btn {
+            &__blog {
+              width: 35%;
+            }
+            &__link {
+              width: 60%;
+            }
+          }
+        }
+      }
+      &--bio {
+        grid-column: 1;
+        @include flex(column, center, center);
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .user {
+    border-radius: $radius-md;
+
+    &__wrapper {
+      height: 100%;
+      padding: 10px;
+      @include grid(1, 1rem);
+
+      &--avatar {
+        @include flex(row, center, center);
+        width: 100%;
+
+        .user--avatar {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &--details {
+        grid-column: 1;
+        @include flex(column, center, center);
+
+        .badge {
+          border-radius: $radius-md;
+        }
+
+        .actions {
+          width: 100%;
+          margin: 1rem 0;
+          @include flex(row, space-between, center);
+
+          .icon {
+            font-size: 1.2rem;
+          }
+
+          .btn {
+            &__blog {
+              width: 35%;
+            }
+            &__link {
+              width: 60%;
+            }
+          }
+        }
+      }
+      &--bio {
+        grid-column: 1;
+        @include flex(column, center, center);
+
+        p {
+          text-align: center;
+        }
       }
     }
   }

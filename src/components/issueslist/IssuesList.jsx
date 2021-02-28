@@ -50,7 +50,7 @@ function IssuesList({ issues, repo }) {
         alignItems='center'
         justifyContent='space-between'
         className='issues__header'>
-        <Select width='15%' mb='10px' placeholder='Sort By'>
+        <Select width={['30%']} mb='10px' placeholder='Sort By'>
           <option value='open'>Open</option>
           <option value='closed'>Closed</option>
         </Select>

@@ -5,16 +5,17 @@
 
 .issuecard {
   width: 100%;
-  background: $light;
-  border-radius: $radius-md;
+  border: 2px solid $light;
+  border-radius: $radius-lg;
   padding: 20px;
   @include flex(column, space-between, flex-start);
 
-  h3 {
-    font-size: 1rem;
+  & > h3 {
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
+    text-align: left;
   }
 
   &__container {
@@ -26,6 +27,8 @@
       border-radius: $radius-md;
       text-transform: capitalize;
       font-weight: 500;
+      width: 20%;
+      @include flex(row, center, center);
 
       &__open {
         background: $green;
@@ -34,6 +37,21 @@
       &__close {
         background: $red;
         color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .issuecard {
+    border-radius: $radius-md;
+
+    &__container {
+      width: 100%;
+      @include flex(row, space-between, center);
+
+      .badge {
+        border-radius: $radius-md;
       }
     }
   }

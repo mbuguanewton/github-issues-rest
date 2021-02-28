@@ -1,7 +1,7 @@
 import { Text } from '@chakra-ui/react'
 import React, { Suspense, lazy } from 'react'
 
-const RepoCard = lazy(() => import('../randomrepos/RandomRepoCard'))
+const RepoCard = lazy(() => import('../repocard/RepoCard'))
 
 function UserRepos({ repos }) {
   return (

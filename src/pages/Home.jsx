@@ -1,9 +1,7 @@
-import RandomRepos from '../components/randomrepos/RandomRepos'
 import Search from '../components/search/Search'
 import UserDetails from '../components/user/User'
 import { useSelector } from 'react-redux'
 import UserRepos from '../components/userrepos/UserRepos'
-// import { GraphQLClient, gql } from 'graphql-request'
 
 function Home() {
   const { user, repos } = useSelector((state) => state.github)
@@ -87,7 +85,6 @@ function Home() {
   return (
     <div className='home'>
       <div className='home__wrapper'>
-        <RandomRepos />
         <Search />
         {user && <UserDetails user={user} />}
         {repos && repos.length ? <UserRepos repos={repos} /> : null}

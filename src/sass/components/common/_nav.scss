@@ -3,19 +3,70 @@
 @import '../../variables';
 
 .nav {
-  height: 3rem;
-  background: $light;
+  height: 3.5rem;
+  background: $black;
+  width: 100%;
 
   &__wrapper {
     width: 60%;
     margin: 0 auto;
     padding: 10px 0;
-    @include flex(row, flex-start, center);
     height: 100%;
 
-    h1 {
-      font-size: 1.3rem;
-      font-weight: 600;
+    &--logo {
+      width: 100%;
+
+      h1 {
+        font-size: 1.4rem;
+        font-weight: 900;
+        color: $white;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .nav {
+    &__wrapper {
+      width: 90%;
+      @include flex(row, center, center);
+      height: 100%;
+
+      &--logo {
+        width: 100%;
+        @include flex(row, center, center);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    &__wrapper {
+      width: 80%;
+      @include flex(row, center, center);
+      height: 100%;
+
+      &--logo {
+        width: 100%;
+        @include flex(row, center, center);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .nav {
+    &__wrapper {
+      width: 70%;
+      @include flex(row, center, center);
+      height: 100%;
+
+      &--logo {
+        width: 100%;
+        @include flex(row, center, center);
+      }
     }
   }
 }

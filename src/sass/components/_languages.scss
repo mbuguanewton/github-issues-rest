@@ -7,12 +7,6 @@
   width: 100%;
   height: auto;
 
-  h2 {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    color: $dark-grey;
-  }
-
   &__wrapper {
     @include grid(15, 5px);
 
@@ -24,6 +18,30 @@
       text-transform: capitalize !important;
       font-weight: 400 !important;
       box-shadow: none !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .languages {
+    &__wrapper {
+      @include grid(5, 5px);
+
+      &--badge {
+        border-radius: $radius-md !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .languages {
+    &__wrapper {
+      @include grid(10, 5px);
+
+      &--badge {
+        border-radius: $radius-md !important;
+      }
     }
   }
 }

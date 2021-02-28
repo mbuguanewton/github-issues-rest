@@ -1,4 +1,4 @@
-import { Badge, Text } from '@chakra-ui/react'
+import { Badge } from '@chakra-ui/react'
 import React, { useState, useEffect, useCallback } from 'react'
 
 function Languages({ languages }) {
@@ -15,7 +15,6 @@ function Languages({ languages }) {
 
   return (
     <div className='languages'>
-      <Text as='h2'>Languages</Text>
       <div className='languages__wrapper'>
         {langArray && langArray.length
           ? langArray.map((lang) => (

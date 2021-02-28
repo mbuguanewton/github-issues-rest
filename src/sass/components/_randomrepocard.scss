@@ -5,9 +5,10 @@
 
 .randomcard {
   padding: 20px;
-  height: 100%;
-  background: $light;
-  border-radius: $radius-md;
+  height: auto;
+  min-height: 15vh;
+  border: 2px solid $light;
+  border-radius: $radius-lg;
   transition: 0.3s ease;
 
   &:hover {
@@ -22,7 +23,7 @@
     h3 {
       font-size: 1rem;
       text-transform: capitalize;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 1rem;
     }
 

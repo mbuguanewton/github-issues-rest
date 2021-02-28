@@ -5,7 +5,6 @@ import { SkeletonText, SkeletonCircle, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 
 function RandomRepoCard({ repo }) {
-  //repo name, issues, owner, url
   const user = {
     url: repo ? repo.owner.avatar_url : '',
     label: repo ? repo.owner.login : '',

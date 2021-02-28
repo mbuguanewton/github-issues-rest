@@ -24,7 +24,7 @@ function UserDetails() {
           />
         </div>
         <div className='user__wrapper--details'>
-          <h5>Details</h5>
+          {/* <h5>Details</h5> */}
           <h3>{user && user.login}</h3>
           <Stack direction='row' alignItems='center'>
             <Badge className='badge'>Repos : {user && user.public_repos}</Badge>

@@ -7,7 +7,7 @@
   background: $light-grey;
   width: auto;
   min-width: 10%;
-  border-radius: $radius-md;
+  border-radius: $radius-lg;
   font-family: $primary-font;
   @include flex(row, center, center);
 
@@ -28,6 +28,7 @@
     font-size: 0.9rem;
     font-family: $primary-font;
     color: $dark-grey;
+    text-transform: capitalize;
   }
 
   &__control {
@@ -36,9 +37,9 @@
     position: relative;
     font-family: $primary-font;
     color: $dark-grey;
-    background: $light;
+    border: 2px solid $light;
     padding: 0 20px;
-    border-radius: $radius-md;
+    border-radius: $radius-lg;
 
     &:focus {
       outline: none;
@@ -53,4 +54,31 @@
 
 .error {
   color: $red;
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  // common styles
+  .btn {
+    border-radius: $radius-md;
+  }
+
+  // form
+  .formgroup {
+    &__control {
+      border-radius: $radius-md;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .error {
+    color: $red;
+  }
 }

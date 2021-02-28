@@ -10,11 +10,11 @@
 
   &__header {
     .btn {
-      height: 2.5rem;
+      //   height: 2.5rem;
       width: 20%;
-      border-radius: $radius-md;
-      color: $white;
-      background: $primary-color;
+      border-radius: $radius-lg;
+      color: $primary-color;
+      background: lighten($primary-color, 35%);
     }
   }
 
@@ -23,6 +23,7 @@
     color: $dark-grey;
     width: 100%;
     margin: 0.5rem 0;
+    font-weight: 500;
   }
 
   &__wrapper {
@@ -30,9 +31,62 @@
     @include grid(2, 0.5rem);
 
     h3 {
-      font-size: 18px;
+      font-size: 1.2rem;
       color: $dark-grey;
       width: 100%;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .issues {
+    &__header {
+      .btn {
+        width: 40%;
+        border-radius: $radius-md;
+      }
+    }
+
+    h3 {
+      margin: 1rem 0;
+
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 100%;
+      @include grid(1, 0.5rem);
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .issues {
+    &__header {
+      .btn {
+        width: 30%;
+        border-radius: $radius-md;
+      }
+    }
+
+    h3 {
+      margin: 1rem 0;
+
+      text-align: center;
+    }
+
+    &__wrapper {
+      width: 100%;
+      @include grid(2, 0.5rem);
+
+      h3 {
+        text-align: center;
+      }
     }
   }
 }

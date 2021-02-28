@@ -13,3 +13,42 @@
     margin: 0 auto;
   }
 }
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .home {
+    width: 100%;
+    height: auto;
+
+    &__wrapper {
+      width: 90%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    width: 100%;
+    height: auto;
+
+    &__wrapper {
+      width: 80%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .home {
+    width: 100%;
+    height: auto;
+
+    &__wrapper {
+      width: 70%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}

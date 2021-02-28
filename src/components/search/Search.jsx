@@ -34,7 +34,7 @@ function Search() {
       <form onSubmit={handleSubmit}>
         <div className='formgroup'>
           <label hidden='hidden'>Search</label>
-          <FaSearch className='icon' />
+
           <input
             type='text'
             name='search'

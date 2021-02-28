@@ -7,6 +7,7 @@
   height: 3rem;
   width: 100%;
   position: relative;
+  margin: 1rem 0;
 
   form {
     height: 100%;
@@ -16,11 +17,6 @@
     .formgroup {
       width: 40%;
       position: relative;
-
-      .icon {
-        position: absolute;
-        left: 10px;
-      }
     }
 
     .btn {
@@ -29,6 +25,47 @@
       &__submit {
         background: $primary-color;
         color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .search {
+    form {
+      .formgroup {
+        width: 70%;
+      }
+
+      .btn {
+        width: 30%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .search {
+    form {
+      .formgroup {
+        width: 70%;
+      }
+
+      .btn {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .search {
+    form {
+      .formgroup {
+        width: 60%;
+      }
+
+      .btn {
+        width: 30%;
       }
     }
   }

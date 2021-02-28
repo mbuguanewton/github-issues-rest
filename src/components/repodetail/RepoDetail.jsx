@@ -41,7 +41,6 @@ function RepoDetail({ repo }) {
         </div>
         <Languages languages={languages} />
         <div className='repodetail__wrapper--description'>
-          <Text as='h2'>Description</Text>
           <Text as='p'>{repo && repo.description}</Text>
         </div>
       </div>
